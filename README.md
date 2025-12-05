@@ -1,16 +1,28 @@
-# blink_that
+data directory is for api etc etc
 
-A new Flutter project.
+domain directly holds the constants and all 
 
-## Getting Started
+repository directory holds the frontend part
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+feat: A new feature
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+impr: An improvement to an existing feature
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+fix: A bug fix
+
+docs: Documentation only changes
+
+style: Changes that do not affect the meaning of the code (white space, formatting, missing semi-colons, etc)
+
+refactor: A code change that neither fixes a bug nor adds a feature, but makes the code easier to read, understand, or improve
+
+perf: A code change that improves performance
+
+test: Adding missing tests or correcting existing tests
+
+ci: Changes to our CI configuration files and scripts (example scopes: GitHub Workflows)
+
+revert: Reverts a previous commit
+
+chore: Other changes that don't apply to any of the above
