@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:blink_that/domain/constants/appcolor.dart';
 import 'package:blink_that/repository/widgets/uihelper.dart';
-import 'package:blink_that/repository/screens/loginscreen.dart';
+import 'package:blink_that/repository/screens/login/loginscreen.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -15,7 +15,10 @@ class _SplashscreenState extends State<Splashscreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+      );
     });
   }
   @override
