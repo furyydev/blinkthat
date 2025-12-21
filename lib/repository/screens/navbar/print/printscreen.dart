@@ -10,7 +10,7 @@ class Printscreen extends StatelessWidget {
       body: Stack(
           children: [
             Container(
-              height: 180,
+              height: 190,
               color: Color(0xffF7CB45),
             ),
             _headerText(),
@@ -20,7 +20,7 @@ class Printscreen extends StatelessWidget {
   }
     Padding _headerText() {
     return Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 40.0, 16.0, 16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 46.0, 16.0, 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

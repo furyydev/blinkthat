@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           _header(),
-          // SizedBox(height: 1),s
+          // SizedBox(height: 1),
           Container(
             height: 180,
             // width: 375,
@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
     return Stack(
           children: [
             Container(
-              height: 180,
+              height: 190,
               color: Color(0xffEC0505),
             ),
             _headerText(),
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
 
   Padding _headerText() {
     return Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 40.0, 16.0, 16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 46.0, 16.0, 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
