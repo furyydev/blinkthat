@@ -1,3 +1,4 @@
+import 'package:blink_that/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,7 +11,7 @@ class Category extends StatelessWidget {
       body: Stack(
           children: [
             Container(
-              height: 190,
+              height: 180,
               color: Color(0xffF7CB45),
             ),
             _headerText(),
@@ -20,7 +21,7 @@ class Category extends StatelessWidget {
   }
     Padding _headerText() {
     return Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 46.0, 16.0, 16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 40.0, 16.0, 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
