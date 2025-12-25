@@ -11,73 +11,201 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           _header(),
-          // SizedBox(height: 1),
-          Container(
-            height: 180,
-            // width: 375,
-            color: Color(0xffEC0505),
-            child: Column(
-              children: [
-                SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    UiHelper.CustomText(
-                      text: 'New Year Sale',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontsize: 24,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 16),
-                Stack(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          height: 108,
-                          width: 86,
-                          decoration: BoxDecoration(
-                            color: Color(0xffEAD3D3),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                        Container(
-                          height: 108,
-                          width: 86,
-                          decoration: BoxDecoration(
-                            color: Color(0xffEAD3D3),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                        Container(
-                          height: 108,
-                          width: 86,
-                          decoration: BoxDecoration(
-                            color: Color(0xffEAD3D3),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                        Container(
-                          height: 108,
-                          width: 86,
-                          decoration: BoxDecoration(
-                            color: Color(0xffEAD3D3),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          SizedBox(height: 1),
+          _NewYearSale(),
         ],
       ),
     );
+  }
+
+  Container _NewYearSale() {
+    return Container(
+          height: 190,
+          width: double.infinity,
+          color: Color(0xffEC0505),
+          child: Column(
+            children: [
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  UiHelper.CustomText(
+                    text: 'New Year Sale',
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontsize: 24,
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              Stack(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        height: 108,
+                        width: 86,
+                        decoration: BoxDecoration(
+                          color: Color(0xffEAD3D3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12),
+                              child: Column(
+                                children: [
+                                  UiHelper.CustomText(
+                                    text: 'Candles &',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                  UiHelper.CustomText(
+                                    text: 'Lightes',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            Expanded(
+                              child: Image.asset(
+                                'assets/image/sale1.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      Container(
+                        height: 108,
+                        width: 86,
+                        decoration: BoxDecoration(
+                          color: Color(0xffEAD3D3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 12.0),
+                              child: Column(
+                                children: [
+                                  UiHelper.CustomText(
+                                    text: 'Chocolates &',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                  UiHelper.CustomText(
+                                    text: 'Sweets',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Image.asset(
+                                'assets/image/sale2.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 108,
+                        width: 86,
+                        decoration: BoxDecoration(
+                          color: Color(0xffEAD3D3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 12.0),
+                              child: Column(
+                                children: [
+                                  UiHelper.CustomText(
+                                    text: 'Appliances &',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                  UiHelper.CustomText(
+                                    text: 'Gadgets',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Image.asset(
+                                  'assets/image/sale3.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 108,
+                        width: 86,
+                        decoration: BoxDecoration(
+                          color: Color(0xffEAD3D3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 12.0),
+                              child: Column(
+                                children: [
+                                  UiHelper.CustomText(
+                                    text: 'Home',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                  UiHelper.CustomText(
+                                    text: '& Living',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontsize: 10,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(4.0),
+                                child: Image.asset(
+                                  'assets/image/sale4.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        );
   }
 
   Stack _header() {

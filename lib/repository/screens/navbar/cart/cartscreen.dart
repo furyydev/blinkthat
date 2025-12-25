@@ -59,35 +59,36 @@ class Cartscreen extends StatelessWidget {
                     children: [
                       SizedBox(width: 5),
                       _buildProductCard(
-                        productName: 'Amul Taaza Toned Fresh Milk',
+                        productName: 'Too yum',
                         deliveryTime: '16 MINS',
                         price: '₹ 27',
                         imageName: 'tooyum.png',
                       ),
                       SizedBox(width: 10),
                       _buildProductCard(
-                        productName: 'Potato (Aloo)',
+                        productName: 'Ice-cream (Vanilla)',
                         deliveryTime: '16 MINS',
                         price: '₹ 37',
                         imageName: 'icecream.png',
                       ),
                       SizedBox(width: 10),
                       _buildProductCard(
-                        productName: 'Hybrid Tomato',
+                        productName: 'Keyllogs Muesli',
                         deliveryTime: '16 MINS',
                         price: '₹ 37',
                         imageName: 'muesli.png',
                       ),
                       SizedBox(width: 10),
                       _buildProductCard(
-                        productName: 'Diet Coke',
+                        productName: 'Bourbon',
                         deliveryTime: '16 MINS',
                         price: '₹ 45',
                         imageName: 'bourbon.png',
+                        
                       ),
                       SizedBox(width: 10),
                       _buildProductCard(
-                        productName: 'Crackers',
+                        productName: 'Ata',
                         deliveryTime: '16 MINS',
                         price: '₹ 25',
                         imageName: 'ata.png',
